@@ -1,0 +1,13 @@
+{
+  "name": "Love Ledger",
+  "short_name": "Love Ledger",
+  "description": "Our little world, just the two of us 💕",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FF2D55",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

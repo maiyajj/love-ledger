@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Love Ledger">
+  <meta name="theme-color" content="#FF2D55" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/app.css">
+  <title>Love Ledger</title>
+</head>
+<body>
+  <div id="app">
+    <div id="pages"></div>
+    <nav id="tabbar"></nav>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/modules/cost-calc.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+    document.addEventListener('DOMContentLoaded', () => App.init());
+  </script>
+</body>
+</html>
